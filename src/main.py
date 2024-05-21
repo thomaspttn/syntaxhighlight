@@ -8,7 +8,7 @@ def extract_and_highlight(text):
     highlighted_text = ""
     
     for token in doc:
-        if token.dep_ == "nsubj" or token.dep_ in ["dobj", "pobj"]:
+        if token.dep_ in ("nsubj", "dobj") or token.tag_ in ("RB", "MD"):
             highlighted_text += f'<strong>{token.text}</strong>'
         else:
             highlighted_text += token.text
