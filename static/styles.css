@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'CommitMono';
+    src: url('/fonts/CommitMonoV143/CommitMono-400-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #ffffff; /* Soft gray background */
+    color: #000; /* Darker text for better contrast */
+    font-family: "CommitMono", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px; /* Increase base font size for better readability */
+    line-height: 1.5; /* Increase line height for better readability */
+    font-feature-settings: "ss01", "ss03", "ss04", "ss05";
+    overflow-x: hidden; /* Only prevent horizontal overflow */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Padding around content */
+}
+
+
+/* Additional styling for headers for a bit of distinction without bolding */
+h1 {
+    color: #456943; 
+    font-weight: normal;
+    font-size: 16px; /* Larger for main headers */
+    margin: 20px 0; /* Space out headers */
+}
+
+h2 {
+    font-size: 14px; /* Larger for main headers */
+    margin: 20px 0; /* Space out headers */
+}
+
+h3 {
+    font-size: 14px; /* Larger for main headers */
+    font-weight: normal;
+}
+
+h4 {
+    margin-top: 40px; /* Add space above the footer */
+    font-weight: normal;
+    text-align: center; /* Center the footer text */
+    font-size: 14px; /* Larger for main headers */
+}
+
+/* Style for the section lists */
+ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding-left: 0; /* Align with the above header */
+}
+
+/* Italicize dates - if not done directly in HTML */
+li em {
+    font-style: italic; /* Ensure dates are italicized */
+}
+
+/* Style for links for a minimal but noticeable look */
+a {
+    color: #456943; 
+    text-decoration: underline; /* No underline */
+}
+
+a:hover {
+    color: #456943; 
+}
+
+.footer {
+  text-align: center; /* Center the footer text */
+  margin-top: 10px; /* Add space above the footer */
+  padding: 20px 0; /* Padding inside the footer */
+  font-size: 14px; /* Smaller font size for the footer */
+  color: #000; /* Footer text color, already defined but can be adjusted */
+  width: 100%; /* Ensure the footer spans the width of the page */
+}
